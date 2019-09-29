@@ -1,0 +1,13 @@
+server:
+  port: 8014
+spring:
+  application:
+    name: Producer-Application
+eureka:
+  instance:
+    instance-id: instanceId-Producer04Application
+    prefer-ip-address: true
+  client:
+    service-url: 
+      defaultZone: http://eureka7001:7001/eureka/,http://eureka7002:7002/eureka/,http://eureka7003:7003/eureka/
+

@@ -1,0 +1,13 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: Customer01-Application
+eureka:
+  instance:
+    instance-id: instanceId-Customer01Application
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://eureka7001:7001/eureka/,http://eureka7002:7002/eureka/,http://eureka7003:7003/eureka/
+    register-with-eureka: false
