@@ -20,6 +20,7 @@
         <module>producer04-hystrix</module>
         <module>producer-api</module>
         <module>customer-hystrix-dashboard</module>
+        <module>zuul-geteway</module>
     </modules>
 
     <dependencyManagement>
@@ -67,7 +68,12 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-actuator</artifactId>
-                <version>2.1.8.RELEASE</version>
+                <version>1.5.22.RELEASE</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-zuul</artifactId>
+                <version>1.4.7.RELEASE</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

@@ -10,7 +10,7 @@ eureka:
   client:
     service-url:
       defaultZone: http://eureka7001:7001/eureka/,http://eureka7002:7002/eureka/,http://eureka7003:7003/eureka/
-    register-with-eureka: false
+    #register-with-eureka: false   #消费者一般不注册进入eureka
 
 feign:
   hystrix:
