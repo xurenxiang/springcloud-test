@@ -21,6 +21,7 @@
         <module>producer-api</module>
         <module>customer-hystrix-dashboard</module>
         <module>zuul-geteway</module>
+        <module>config-server</module>
     </modules>
 
     <dependencyManagement>
@@ -73,6 +74,11 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-zuul</artifactId>
+                <version>1.4.7.RELEASE</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-config-server</artifactId>
                 <version>1.4.7.RELEASE</version>
             </dependency>
         </dependencies>
